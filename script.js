@@ -5,18 +5,22 @@ function (){
     let green = document.querySelector('.btn-green');
 
     buttons.forEach(function(button) {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('onclick', function(e) {
             let value = e.target.dataset.num;
             screen.value += value;
         });
     });
 
-        equal.addEventListener('click', function(e) {
+        equal.addEventListener('onclick', function(e) {
             if (screen.value === '') {
                 screen.value = "Please Enter";
             } else {
                 let answer = eval(screen.value);
                 screen.value = answer;
             }
-        }
+        })
+
+        clear.addEventListener('onclick', function(e) {
+            screen.value ="";
+        })
 })();
