@@ -53,3 +53,19 @@ button {
     cursor: pointer;
 }
 
+.btn-yellow {
+    background: rgb(245, 146, 62);
+    color: #fff;
+}
+
+.btn-grey {
+    background: rgb(224, 224, 224);
+}
+
+.btn-red {
+    background: red;
+}
+
+.btn-green {
+    background: green;
+}
