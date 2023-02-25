@@ -1,17 +1,17 @@
-function (){
+function () {
     let screen = document.querySelector('.screen');
     let buttons = document.querySelector('.btn');
     let red = document.querySelector('.btn-red');
     let green = document.querySelector('.btn-green');
 
     buttons.forEach(function(button) {
-        button.addEventListener('onclick', function(e) {
+        button.addEventListener('click', function(e) {
             let value = e.target.dataset.num;
             screen.value += value;
         });
     });
 
-        equal.addEventListener('onclick', function(e) {
+        equal.addEventListener('click', function(e) {
             if (screen.value === '') {
                 screen.value = "Please Enter";
             } else {
@@ -20,7 +20,6 @@ function (){
             }
         })
 
-        clear.addEventListener('onclick', function(e) {
+        clear.addEventListener('click', function(e) {
             screen.value ="";
         })
-})();
