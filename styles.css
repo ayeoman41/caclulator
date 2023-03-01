@@ -53,6 +53,10 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    background-color: #fff;
+}
+
 .btn-yellow {
     background: rgb(245, 146, 62);
     color: #fff;
